@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.json({ message: 'Start at /api end points for RANDOM ACCESS CHANNEL PROCEDURE ! ! !' });
   });
 
