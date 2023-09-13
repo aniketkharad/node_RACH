@@ -18,14 +18,14 @@ function clearTempCRNTIMap() {
 
 // Clear tempCRNTIMap every 1 second
 setInterval(clearTempCRNTIMap, 1000);
+app.get('/home', (req, res) => {
+    res.json({ message: 'Start at /api end points for RANDOM ACCESS CHANNEL PROCEDURE ! ! !' });
+  });
 
 app.get('/api/', (req, res) => {
   res.json({ message: 'RACH procedure implemtation' });
 });
 
-app.get('/', (req, res) => {
-    res.json({ message: 'Start at /api end points for RANDOM ACCESS CHANNEL PROCEDURE ! ! !' });
-  });
 
 
 app.post('/api/PreambleTransmission', (req, res) => {
